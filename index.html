@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" href="data:," />
+  <title>Ngọc Vân Các — Trang Sức Phong Thủy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="topbar">Miễn phí giao hàng nội thành Hà Nội trong bán kính 10km · Bảo hành dây đeo vĩnh viễn · Hotline <span id="cfgHotlineTop">0301 234 567</span></div>
+  <header class="site">
+    <div class="hwrap">
+      <button class="iconbtn" id="menuBtn" aria-label="Mở menu">☰</button>
+      <a class="logo" href="#" data-nav="home"><img id="siteLogo" src="images/logo.jpg" alt="Logo Ngọc Vân Các"><span><b>Ngọc Vân Các</b><span>Trang sức phong thủy</span></span></a>
+      <nav class="main" id="mainNav">
+        <button data-nav="home" class="active">Trang chủ</button>
+        <button data-nav="about">Giới thiệu</button>
+        <button data-nav="shop">Sản phẩm</button>
+        <button data-nav="orders">Đơn hàng</button>
+        <button data-nav="blog">Bài viết</button>
+        <button data-nav="contact">Liên hệ</button>
+      </nav>
+      <div class="hactions">
+        <button class="iconbtn" id="favBtn" aria-label="Danh sách yêu thích">♥<span class="badge" id="favCount"></span></button>
+        <button class="iconbtn" id="cartBtn" aria-label="Giỏ hàng" title="Giỏ hàng"><svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M1.8 2.2h3.1l2.5 12.2a1.85 1.85 0 0 0 1.82 1.48h8.32a1.85 1.85 0 0 0 1.81-1.43L21.9 6.3H5.55" />
+            <path d="M9.35 8.55v4.7M12.85 8.55v4.7M16.35 8.55v4.7" stroke-width="1.35" />
+            <circle cx="10.1" cy="20" r="1.55" fill="currentColor" stroke="none" />
+            <circle cx="18.2" cy="20" r="1.55" fill="currentColor" stroke="none" />
+          </svg><span class="badge" id="cartCount"></span></button>
+      </div>
+    </div>
+    <div class="searchbar">
+      <input id="globalSearch" type="search" placeholder="Tìm vòng theo tên, chất liệu, mã sản phẩm… (VD: thạch anh, NDC-TQ-001)" aria-label="Tìm kiếm sản phẩm">
+      <button class="btn btn-jade btn-sm" id="searchGo">Tìm kiếm</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HOME ============ -->
+    <section class="view active" id="view-home">
+      <section class="promo-hero" id="promoBannerSection">
+        <a class="promo-hero-link" id="promoBannerLink" href="#" data-nav="shop" aria-label="Ưu đãi đặc biệt giảm đến 30% — Khám phá bộ sưu tập Ngọc Vân Các">
+          <img id="promoBannerImg" src="images/banner-khuyen-mai.jpg" alt="Vòng tay ngọc bích với charm sen vàng trên phiến đá trắng, núi sương và hoa sen phía sau">
+          <span class="promo-hero-veil" aria-hidden="true"></span>
+          <span class="promo-hero-text">
+            <span class="promo-eyebrow">Ưu đãi đặc biệt · Số lượng có hạn</span>
+            <span class="promo-title">Giảm đến <b>30%</b></span>
+            <span class="promo-slogan">Ngọc dưỡng tâm an — Vân khai vận sáng</span>
+            <span class="promo-sub">Mã Não Đen giảm sâu nhất — chỉ còn 489.300₫</span>
+            <span class="promo-perks"><span>Miễn phí vận chuyển</span><span>Đá tự nhiên</span><span>Quà tặng đi kèm</span></span>
+            <span class="promo-cta">Khám phá ngay →</span>
+          </span>
+        </a>
+      </section>
+
+      <div class="wrap hero">
+        <svg class="clouds" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+          <g fill="none" stroke="#0e5a4a" stroke-opacity=".10" stroke-width="1.5">
+            <path d="M-20,150 C120,100 220,200 360,150 S620,100 760,150 S1060,200 1240,140" />
+            <path d="M-20,196 C120,146 220,246 360,196 S620,146 760,196 S1060,246 1240,186" />
+          </g>
+          <g fill="#b08d4f" fill-opacity=".16">
+            <path d="M1086,96 C1070,76 1070,58 1086,44 C1102,58 1102,76 1086,96Z" />
+            <path d="M1058,92 C1050,70 1054,54 1066,46 C1074,62 1072,80 1058,92Z" />
+            <path d="M1114,92 C1122,70 1118,54 1106,46 C1098,62 1100,80 1114,92Z" />
+          </g>
+          <g fill="#b08d4f" fill-opacity=".12">
+            <path d="M96,420 C82,402 82,386 96,374 C110,386 110,402 96,420Z" />
+            <path d="M72,416 C65,398 68,384 79,377 C86,391 84,406 72,416Z" />
+            <path d="M120,416 C127,398 124,384 113,377 C106,391 108,406 120,416Z" />
+          </g>
+        </svg>
+        <img class="medallion" src="images/logo.jpg" alt="Logo Ngọc Vân Các — viên ngọc xanh viền vàng">
+        <div class="eyebrow">Ngọc Vân Các · Trang sức phong thủy</div>
+        <h1>Ngọc Vân Các.<br><em>Ngọc dưỡng tâm an,</em><br>Vân khai vận sáng</h1>
+        <div class="ornament"><svg width="30" height="20" viewBox="0 0 30 20" aria-hidden="true">
+            <g fill="currentColor">
+              <path d="M15,19 C10,13 10,6 15,1 C20,6 20,13 15,19Z" />
+              <path d="M4,17 C3,10 6,4 10,2 C12,8 10,14 4,17Z" opacity=".65" />
+              <path d="M26,17 C27,10 24,4 20,2 C18,8 20,14 26,17Z" opacity=".65" />
+            </g>
+          </svg></div>
+        <p>Khám phá bộ sưu tập vòng tay phong thủy từ Ngọc Vân Các, nơi vẻ đẹp của ngọc, đá và nghệ thuật Á Đông hòa quyện. Mỗi thiết kế là một dấu ấn riêng, đồng hành cùng bạn trên hành trình tìm kiếm sự cân bằng và phong cách cá nhân.</p>
+        <div class="cta-row">
+          <button class="btn btn-jade" data-nav="shop">Khám phá bộ sưu tập</button>
+          <button class="btn btn-ghost" id="ctaMenh">Chọn vòng theo bản mệnh</button>
+        </div>
+        <div class="stats">
+          <div><b>16+</b><span>Thiết kế vòng tay</span></div>
+          <div><b>5</b><span>Bản mệnh ngũ hành</span></div>
+          <div><b>Vĩnh viễn</b><span>Bảo hành dây đeo</span></div>
+        </div>
+        <div class="hero-wide">
+          <img src="images/sp-NTV-001.jpg" alt="Vòng ngọc bích xanh của Ngọc Vân Các">
+          <div class="hero-card"><b>BST Ngọc Thanh Vân</b><br>Vòng Ngọc Bích Thanh Vân — 1.090.000₫</div>
+        </div>
+        <p style="font-size:12.5px;color:var(--muted);margin-top:16px">Giấy Kiểm Định Đá được cung cấp theo yêu cầu khi đặt hàng (cộng thêm 20 ngày giao hàng).</p>
+      </div>
+
+
+
+      <div class="wrap">
+        <section class="block" id="menhSection">
+          <div class="sec-head">
+            <div>
+              <div class="eyebrow">Ngũ hành bản mệnh</div>
+              <h2>Chọn vòng theo bản mệnh</h2>
+              <p>Bấm vào bản mệnh của bạn — hệ thống lọc ngay những mẫu vòng hợp mệnh trong cửa hàng.</p>
+            </div>
+          </div>
+          <div class="menh-row">
+            <button class="menh" data-menh="Kim"><span class="dot" style="background:#b08d4f">金</span><b>Mệnh Kim</b><span>Trắng · Vàng · Nâu đất</span></button>
+            <button class="menh" data-menh="Mộc"><span class="dot" style="background:#3e7d4e">木</span><b>Mệnh Mộc</b><span>Xanh lá · Xanh biển</span></button>
+            <button class="menh" data-menh="Thủy"><span class="dot" style="background:#2e6d8a">水</span><b>Mệnh Thủy</b><span>Xanh biển · Đen · Trắng</span></button>
+            <button class="menh" data-menh="Hỏa"><span class="dot" style="background:#b3402e">火</span><b>Mệnh Hỏa</b><span>Đỏ · Hồng · Tím · Xanh lá</span></button>
+            <button class="menh" data-menh="Thổ"><span class="dot" style="background:#8a6a3b">土</span><b>Mệnh Thổ</b><span>Nâu · Vàng · Đỏ · Hồng</span></button>
+          </div>
+        </section>
+      </div>
+
+      <div class="wrap">
+        <section class="block">
+          <div class="sec-head">
+            <div>
+              <div class="eyebrow">Danh mục nổi bật</div>
+              <h2>Bắt đầu từ điều bạn cần</h2>
+            </div>
+          </div>
+          <div class="why">
+            <div>
+              <div class="ic">☯</div>
+              <h3>Vòng phong thủy</h3>
+              <p>Đá tự nhiên chọn theo ngũ hành, hỗ trợ cân bằng năng lượng mỗi ngày.</p><br><button class="btn btn-ghost btn-sm" data-catgo="phongthuy">Xem ngay →</button>
+            </div>
+            <div>
+              <div class="ic">✦</div>
+              <h3>Vòng thời trang</h3>
+              <p>Thiết kế thanh lịch, dễ phối đồ — đeo đẹp trước, hợp mệnh sau vẫn kịp.</p><br><button class="btn btn-ghost btn-sm" data-catgo="thoitrang">Xem ngay →</button>
+            </div>
+            <div>
+              <div class="ic">❖</div>
+              <h3>Bộ sưu tập</h3>
+              <p>Thanh Vân dịu nhẹ và Dạ Minh trầm sâu — hai BST giới hạn của nhà Các.</p><br><button class="btn btn-ghost btn-sm" data-catgo="bst">Xem ngay →</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="wrap">
+        <section class="block">
+          <div class="sec-head">
+            <div>
+              <div class="eyebrow">Về cửa hàng</div>
+              <h2>Một góc nhỏ dành cho ngọc và người yêu ngọc</h2>
+              <p>Ngọc Vân Các tọa lạc tại 366 Nguyễn Trãi, Thanh Xuân, Hà Nội — nơi mỗi chiếc vòng đều được chọn tay từng hạt đá, xâu dây thủ công và kiểm tra kỹ trước khi đến tay khách. Chúng tôi tin vòng tay không chỉ là trang sức, mà là một lời nhắc dịu dàng về sự bình an.</p>
+            </div><button class="btn btn-ghost" data-nav="about">Tìm hiểu thêm</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="wrap">
+        <section class="block">
+          <div class="lookbook">
+            <div class="lb-img"><img src="images/sp-NTV-001.jpg" alt="Vòng Ngọc Bích Thanh Vân trên nền lụa"></div>
+            <div class="lb-text">
+              <div class="eyebrow">Bộ sưu tập giới hạn</div>
+              <h2>BST Ngọc Thanh Vân</h2>
+              <p>Thanh Vân là mây xanh buổi sớm — nhẹ, trong và thanh thoát. Ngọc bích mướt mát, moonstone ánh trăng và apatite hải lam được chọn tay từng hạt cho những ngày cần sự dịu dàng.</p>
+              <div class="lb-row">
+                <div class="nm"><b>Vòng Ngọc Bích Thanh Vân</b><span>NTV-001 · Ngọc Bích · Còn 20</span></div><span class="pr">1.090.000₫</span><button class="btn btn-ghost btn-sm" data-detail="NTV-001">Xem</button>
+              </div>
+              <div class="lb-row">
+                <div class="nm"><b>Vòng Moonstone Ánh Trăng</b><span>NTV-002 · Mệnh Kim · Thủy · Còn 20</span></div><span class="pr">750.000₫</span><button class="btn btn-ghost btn-sm" data-detail="NTV-002">Xem</button>
+              </div>
+              <div class="lb-row">
+                <div class="nm"><b>Vòng Apatite Hải Lam</b><span>NTV-003 · Mệnh Thủy · Mộc · Còn 20</span></div><span class="pr">590.000₫</span><button class="btn btn-ghost btn-sm" data-detail="NTV-003">Xem</button>
+              </div>
+              <div style="margin-top:18px"><button class="btn btn-jade" id="tvGo">Xem BST Thanh Vân</button></div>
+            </div>
+          </div>
+          <div class="grid" id="homeThanhvan" style="margin-top:22px"></div>
+        </section>
+      </div>
+
+      <div class="wrap">
+        <section class="block">
+          <div class="sec-head">
+            <div>
+              <div class="eyebrow">Bộ sưu tập mới</div>
+              <h2>BST Ngọc Dạ Minh</h2>
+              <p>Lấy cảm hứng từ ánh ngọc trong đêm tĩnh: Diopside lục bảo sâu thẳm, Mã Não hồng diễm ấm áp và Gỗ Hóa Thạch trầm mặc nghìn năm.</p>
+            </div><button class="btn btn-jade btn-sm" id="bstGo">Xem BST Dạ Minh</button>
+          </div>
+          <div class="bst-banner" style="margin-bottom:22px"><img src="images/baiviet-2.jpg" alt="Vòng ngọc trong hộp quà Ngọc Vân Các">
+            <div class="over">
+              <h3>Ngọc Dạ Minh — Sáng trong tĩnh lặng</h3>
+              <p>Số lượng giới hạn: mỗi mẫu chỉ còn 20 chiếc.</p><button class="btn btn-gold btn-sm" id="bstGo2">Khám phá ngay</button>
+            </div>
+          </div>
+          <div class="grid" id="homeDaminh"></div>
+        </section>
+      </div>
+
+      <div class="wrap">
+        <section class="block">
+          <div class="sec-head">
+            <div>
+              <div class="eyebrow">Được yêu thích</div>
+              <h2>Vòng phong thủy nổi bật</h2>
+            </div><button class="btn btn-ghost btn-sm" data-nav="shop">Xem tất cả →</button>
+          </div>
+          <div class="grid" id="homeFeatured"></div>
+        </section>
+      </div>
+
+      <div class="wrap">
+        <section class="block">
+          <div class="sec-head">
+            <div>
+              <div class="eyebrow">Góc chia sẻ</div>
+              <h2>Bài viết mới</h2>
+            </div>
+          </div>
+          <div class="two-col" id="homeArticles"></div>
+        </section>
+      </div>
+    </section>
+    <section class="view" id="view-about">
+      <div class="wrap prose" style="padding-top:34px">
+        <div class="eyebrow">Giới thiệu</div>
+        <h2 style="font-size:34px;color:var(--jade2);margin:8px 0">Về chúng tôi</h2>
+        <p>Ngọc Vân Các là cửa hàng trang sức phong thủy tại Hà Nội, chuyên về vòng tay đá tự nhiên và ngọc. Tên gọi “Ngọc Vân Các” gói trọn triết lý của chúng tôi: <b>Ngọc dưỡng tâm an – Vân khai vận sáng</b> — ngọc nuôi dưỡng sự an yên bên trong, mây (vân) mở ra vận hội sáng sủa bên ngoài.</p>
+        <h3>Chúng tôi làm gì</h3>
+        <p>Chúng tôi tuyển chọn đá tự nhiên (mã não, thạch anh, mắt hổ, apatite, diopside, moonstone, ngọc bích, gỗ hóa thạch…), thiết kế và xâu vòng thủ công theo size cổ tay của từng khách. Mỗi sản phẩm đều ghi rõ chất liệu, mã sản phẩm, bản mệnh phù hợp và chính sách bảo hành — minh bạch từ hạt đá đầu tiên.</p>
+        <h3>Lịch sử hình thành</h3>
+        <div class="timeline">
+          <div><b>Khởi đầu</b>
+            <p style="margin:4px 0">Ngọc Vân Các bắt đầu từ một xưởng nhỏ chuyên xâu vòng đá cho người thân, bạn bè — những chiếc vòng đầu tiên được chọn hoàn toàn bằng tay và niềm tin vào năng lượng của đá tự nhiên.</p>
+          </div>
+          <div><b>Ra mắt cửa hàng</b>
+            <p style="margin:4px 0">Cửa hàng tại 366 Nguyễn Trãi, Thanh Xuân, Hà Nội chính thức mở cửa, đưa hai dòng sản phẩm chủ lực — vòng phong thủy và vòng thời trang — đến gần hơn với khách hàng.</p>
+          </div>
+          <div><b>Hai bộ sưu tập riêng</b>
+            <p style="margin:4px 0">BST Ngọc Thanh Vân và BST Ngọc Dạ Minh ra đời, đánh dấu bước chuyển từ “bán vòng đá” sang “thiết kế bộ sưu tập” với dấu ấn Á Đông riêng của nhà Các.</p>
+          </div>
+        </div>
+        <h3>Câu chuyện thương hiệu</h3>
+        <p>Người sáng lập Ngọc Vân Các tin rằng một chiếc vòng đẹp phải làm được hai việc: khiến người đeo thấy mình đẹp hơn, và khiến họ thấy lòng mình yên hơn. Vì vậy, mỗi thiết kế ở đây đều bắt đầu từ câu hỏi rất giản dị — “chiếc vòng này sẽ đồng hành với ai, trong những ngày như thế nào?” Từ hạt đá thô đến sợi dây hoàn thiện, mọi công đoạn đều chậm rãi và có chủ đích, như cách mây trôi trên mái ngói cũ: không vội, nhưng không bao giờ đứng yên.</p>
+        <h3>Tại sao nên chọn Ngọc Vân Các</h3>
+        <div class="why" style="margin-top:14px">
+          <div>
+            <div class="ic">✧</div>
+            <h3>Thiết kế tinh tế</h3>
+            <p>Đậm chất Á Đông, tối giản và sang — đeo đi làm, đi lễ hay dự tiệc đều hợp.</p>
+          </div>
+          <div>
+            <div class="ic">❖</div>
+            <h3>Sản phẩm đa dạng</h3>
+            <p>16+ mẫu vòng, 3 phân khúc giá và đủ 5 bản mệnh ngũ hành để lựa chọn.</p>
+          </div>
+          <div>
+            <div class="ic">☰</div>
+            <h3>Thông tin minh bạch</h3>
+            <p>Mã sản phẩm, chất liệu, tồn kho và giá khuyến mãi công khai rõ ràng.</p>
+          </div>
+          <div>
+            <div class="ic">♡</div>
+            <h3>Tư vấn tận tâm</h3>
+            <p>Tư vấn chọn vòng theo bản mệnh, size tay và nhu cầu — qua hotline, Zalo, Facebook.</p>
+          </div>
+          <div>
+            <div class="ic">➤</div>
+            <h3>Mua sắm thuận tiện</h3>
+            <p>Đặt hàng nhanh, giao nội thành 1–3 ngày, kiểm tra hàng trước khi nhận.</p>
+          </div>
+        </div>
+        <div style="margin:30px 0"><button class="btn btn-jade" data-nav="shop">Ghé xem bộ sưu tập</button></div>
+      </div>
+    </section>
+    <section class="view" id="view-shop">
+      <div class="wrap" style="padding-top:30px">
+        <div class="eyebrow">Cửa hàng</div>
+        <h2 style="font-size:32px;color:var(--jade2);margin:6px 0 4px">Tất cả sản phẩm</h2>
+        <p style="color:var(--muted);margin:0 0 18px">Lọc theo danh mục, dòng sản phẩm, bộ sưu tập, giá và bản mệnh — chọn đúng chiếc vòng dành cho bạn.</p>
+        <div class="filters">
+          <div class="frow">
+            <div><label for="fCat">Danh mục</label><select id="fCat">
+                <option value="">Tất cả danh mục</option>
+                <option value="thoitrang">Vòng thời trang</option>
+                <option value="phongthuy">Vòng phong thủy</option>
+                <option value="bst">Bộ sưu tập</option>
+              </select></div>
+            <div><label for="fLine">Dòng sản phẩm</label><select id="fLine">
+                <option value="">Tất cả dòng</option>
+                <option value="phothong">Phổ thông</option>
+                <option value="trungcap">Trung cấp</option>
+                <option value="caocap">Cao cấp</option>
+              </select></div>
+            <div><label for="fCol">Bộ sưu tập</label><select id="fCol">
+                <option value="">Tất cả</option>
+                <option value="thanhvan">BST Ngọc Thanh Vân</option>
+                <option value="daminh">BST Ngọc Dạ Minh</option>
+                <option value="none">Không thuộc BST</option>
+              </select></div>
+            <div><label for="fPrice">Khoảng giá (giá KM)</label><select id="fPrice">
+                <option value="">Tất cả giá</option>
+                <option value="0-600000">Dưới 600.000₫</option>
+                <option value="600000-1200000">600.000 – 1.200.000₫</option>
+                <option value="1200000-99999999">Trên 1.200.000₫</option>
+              </select></div>
+            <div><label for="fMenh">Bản mệnh</label><select id="fMenh">
+                <option value="">Tất cả mệnh</option>
+                <option>Kim</option>
+                <option>Mộc</option>
+                <option>Thủy</option>
+                <option>Hỏa</option>
+                <option>Thổ</option>
+              </select></div>
+            <div><label for="fSort">Sắp xếp</label><select id="fSort">
+                <option value="featured">Nổi bật</option>
+                <option value="price-asc">Giá tăng dần</option>
+                <option value="price-desc">Giá giảm dần</option>
+                <option value="name">Tên A–Z</option>
+                <option value="discount">Giảm giá nhiều nhất</option>
+              </select></div>
+          </div>
+          <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;align-items:center">
+            <label style="display:flex;gap:8px;align-items:center;font-size:14px;color:var(--ink)"><input type="checkbox" id="fFavOnly" style="width:19px;height:19px;accent-color:var(--jade)"> Chỉ hiện sản phẩm yêu thích</label>
+            <button class="btn btn-ghost btn-sm" id="clearFilters">Xóa bộ lọc</button>
+          </div>
+        </div>
+        <p class="result-note" id="resultNote"></p>
+        <div class="grid" id="shopGrid"></div>
+        <div class="empty" id="shopEmpty" style="display:none">
+          <h3 class="serif" style="color:var(--jade2)">Không tìm thấy sản phẩm phù hợp</h3>
+          <p>Thử nới lỏng bộ lọc, hoặc để Ngọc Vân Các tư vấn trực tiếp qua hotline 0301 234 567.</p><button class="btn btn-jade btn-sm" id="emptyReset">Xóa bộ lọc</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DETAIL ============ -->
+    <section class="view" id="view-detail">
+      <div class="wrap">
+        <button class="btn btn-ghost btn-sm" id="backShop" style="margin-top:18px">← Quay lại cửa hàng</button>
+        <div class="detail">
+          <div class="big"><img id="dImg" src="images/sp-NDC-MN-001.jpg" alt="Ảnh sản phẩm" onload="this.classList.add('ld')" onerror="this.classList.add('ld')"></div>
+          <div>
+            <div class="eyebrow" id="dSku"></div>
+            <h1 id="dName"></h1>
+            <div class="chips" id="dChips"></div>
+            <div class="price" style="margin-top:12px"><b id="dPrice" style="font-size:26px"></b><s id="dOld"></s><span class="tag" style="position:static" id="dDisc"></span></div>
+            <p class="stock" id="dStock"></p>
+            <p id="dDesc" style="color:#41524b"></p>
+            <div class="opt"><label>Size đá</label>
+              <div class="pills" id="dStone"></div>
+            </div>
+            <div class="opt"><label>Size cổ tay</label>
+              <div class="pills" id="dWrist"></div>
+            </div>
+            <button class="size-help" id="dSizeHelp" type="button">📏 Chưa biết size? Xem cách đo cổ tay ↓</button>
+            <div class="opt"><label>Số lượng</label><span class="qty"><button id="qMinus" aria-label="Giảm số lượng">−</button><input id="qVal" value="1" inputmode="numeric" aria-label="Số lượng"><button id="qPlus" aria-label="Tăng số lượng">+</button></span></div>
+            <label class="checkline"><input type="checkbox" id="dCert"><span><b>Giấy Kiểm Định Đá (+20 ngày giao hàng)</b><br><span style="color:var(--muted)">Sản phẩm sẽ được gửi kiểm định trước khi giao — thời gian giao cộng thêm 20 ngày so với thông thường.</span></span></label>
+            <div class="cta-row">
+              <button class="btn btn-jade" id="dAdd">Thêm vào giỏ hàng</button>
+              <button class="btn btn-gold" id="dBuy">Mua ngay</button>
+              <button class="btn btn-ghost" id="dFav">♡ Yêu thích</button>
+            </div>
+            <div class="info-box">
+              <h4>🚚 Thông tin giao hàng</h4>
+              <ul>
+                <li><b>Nội thành Hà Nội:</b> giao 1–3 ngày, <b>miễn phí</b> trong bán kính 10km.</li>
+                <li><b>Tỉnh/thành khác:</b> giao 5–7 ngày, phí 30.000₫/đơn.</li>
+                <li>Thời gian giao có thể thay đổi tùy địa chỉ nhận hàng.</li>
+                <li>Nếu sản phẩm hết hàng, CSKH sẽ liên hệ để hỗ trợ bạn.</li>
+                <li>Đơn có Giấy Kiểm Định Đá: cộng thêm 20 ngày.</li>
+              </ul>
+            </div>
+            <div class="info-box" style="background:#f7efe0">
+              <h4>↩ Chính sách đổi trả &amp; bảo hành</h4>
+              <ul>
+                <li>Đổi/trả ngay tại thời điểm kiểm tra hàng khi nhận.</li>
+                <li>Không áp dụng đổi trả với sản phẩm bể vỡ do quá trình sử dụng.</li>
+                <li><b>Bảo hành dây đeo vĩnh viễn</b> — khách hàng chịu phí vận chuyển gửi về.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section class="block appendix" id="appendix">
+          <div class="sec-head">
+            <div>
+              <p class="eyebrow">Phụ lục · Áp dụng cho mọi sản phẩm</p>
+              <h2>Chọn size vừa tay</h2>
+            </div>
+          </div>
+          <div class="app-tabs" role="tablist">
+            <button class="app-tab on" data-app="1" role="tab" type="button">Phụ lục 1 · Cách đo size cổ tay</button>
+            <button class="app-tab" data-app="2" role="tab" type="button">Phụ lục 2 · Bảng chọn size</button>
+          </div>
+          <div class="app-panel on" id="appPanel1">
+            <div class="steps">
+              <div class="step">
+                <span class="step-n">1</span>
+                <div class="step-ic"><svg viewBox="0 0 160 100" aria-hidden="true">
+                    <rect x="66" y="70" width="28" height="30" fill="#f3d9c2" stroke="#0e5a4a" stroke-width="2.5" />
+                    <rect x="61" y="20" width="8" height="24" rx="4" fill="#f3d9c2" stroke="#0e5a4a" stroke-width="2.5" />
+                    <rect x="71" y="13" width="8" height="31" rx="4" fill="#f3d9c2" stroke="#0e5a4a" stroke-width="2.5" />
+                    <rect x="81" y="15" width="8" height="29" rx="4" fill="#f3d9c2" stroke="#0e5a4a" stroke-width="2.5" />
+                    <rect x="91" y="22" width="8" height="22" rx="4" fill="#f3d9c2" stroke="#0e5a4a" stroke-width="2.5" />
+                    <rect x="60" y="38" width="40" height="38" rx="14" fill="#f3d9c2" stroke="#0e5a4a" stroke-width="2.5" />
+                    <ellipse cx="58" cy="62" rx="7" ry="12" fill="#f3d9c2" stroke="#0e5a4a" stroke-width="2.5" transform="rotate(-25 58 62)" />
+                    <rect x="54" y="72" width="52" height="14" rx="4" fill="#b08d4f" stroke="#0e5a4a" stroke-width="2" />
+                    <path d="M62 72v6M70 72v6M78 72v6M86 72v6M94 72v6M102 72v6" stroke="#ffffff" stroke-width="1.8" />
+                    <path d="M62 86v-6M70 86v-6M78 86v-6M86 86v-6M94 86v-6M102 86v-6" stroke="#ffffff" stroke-width="1.8" />
+                  </svg></div>
+                <h3>Quấn thước quanh cổ tay</h3>
+                <p>Lấy thước dây hoặc một sợi dây, cuốn một vòng quanh cổ tay, đánh dấu vị trí cuối cùng của điểm chạm.</p>
+              </div>
+              <div class="step">
+                <span class="step-n">2</span>
+                <div class="step-ic"><svg viewBox="0 0 120 84" aria-hidden="true">
+                    <rect x="6" y="28" width="108" height="28" rx="5" fill="#f6ead0" stroke="#b08d4f" stroke-width="2.5" />
+                    <path d="M16 28v10M26 28v7M36 28v10M46 28v7M56 28v10M66 28v7M76 28v10M86 28v7M96 28v10M106 28v7" stroke="#0e5a4a" stroke-width="2" /><text x="102" y="50" font-size="10" fill="#0e5a4a" font-weight="700" text-anchor="middle">cm</text>
+                  </svg></div>
+                <h3>Đo lại bằng thước thẳng</h3>
+                <p>Sau đó xem kích thước hoặc đo lại bằng thước thẳng để biết số đo cổ tay của mình.</p>
+              </div>
+            </div>
+            <div class="app-note">
+              <h4>Lưu ý</h4>
+              <ul>
+                <li>Tuỳ trường hợp muốn đeo chật hay rộng, quý khách có thể chủ động gia giảm kích thước khi báo kích thước cho Ngọc Vân Các.</li>
+                <li>Số đo chỉ mang tính chất tương đối, nên sản phẩm thực tế sẽ có sự chênh lệch đôi chút so với size tay đã đo.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="app-panel" id="appPanel2">
+            <div class="size-table-wrap">
+              <table class="size-table">
+                <thead>
+                  <tr>
+                    <th>Chu vi cổ tay đo được</th>
+                    <th>Size vòng nên chọn</th>
+                    <th>Kiểu đeo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>13 – 14 cm</td>
+                    <td><b>14 cm</b></td>
+                    <td>Ôm sát</td>
+                  </tr>
+                  <tr>
+                    <td>14 – 15 cm</td>
+                    <td><b>15 cm</b></td>
+                    <td>Ôm sát</td>
+                  </tr>
+                  <tr>
+                    <td>15 – 16 cm</td>
+                    <td><b>16 cm</b></td>
+                    <td>Vừa vặn</td>
+                  </tr>
+                  <tr>
+                    <td>16 – 17 cm</td>
+                    <td><b>17 cm</b></td>
+                    <td>Vừa vặn</td>
+                  </tr>
+                  <tr>
+                    <td>17 – 18 cm</td>
+                    <td><b>18 cm</b></td>
+                    <td>Thoải mái</td>
+                  </tr>
+                  <tr>
+                    <td>18 – 19 cm</td>
+                    <td><b>19 cm</b></td>
+                    <td>Thoải mái</td>
+                  </tr>
+                  <tr>
+                    <td>19 – 20 cm</td>
+                    <td><b>20 cm</b></td>
+                    <td>Thoải mái</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="app-note-line">Đo theo Phụ lục 1 rồi đối chiếu bảng này. Muốn đeo rộng rãi hơn thì chọn tăng 1 size so với bảng.</p>
+          </div>
+        </section>
+        <section class="block">
+          <div class="sec-head">
+            <div>
+              <h2>Sản phẩm liên quan</h2>
+            </div>
+          </div>
+          <div class="grid" id="relatedGrid"></div>
+        </section>
+      </div>
+    </section>
+    <section class="view" id="view-blog">
+      <div class="wrap" style="padding-top:30px">
+        <div class="eyebrow">Góc chia sẻ</div>
+        <h2 style="font-size:32px;color:var(--jade2);margin:6px 0 18px">Bài viết</h2>
+        <div class="two-col" id="blogList"></div>
+      </div>
+    </section>
+
+    <section class="view" id="view-article">
+      <div class="wrap">
+        <button class="btn btn-ghost btn-sm" data-nav="blog" style="margin-top:18px">← Tất cả bài viết</button>
+        <div class="article-body" id="articleBody"></div>
+      </div>
+    </section>
+    <section class="view" id="view-contact">
+      <div class="wrap" style="padding-top:30px">
+        <div class="eyebrow">Liên hệ</div>
+        <h2 style="font-size:32px;color:var(--jade2);margin:6px 0 18px">Ngọc Vân Các luôn lắng nghe</h2>
+        <div class="two-col">
+          <div class="prose">
+            <p><b>📍 Địa chỉ:</b> 366 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+            <p><b>☎ Hotline:</b> <a href="tel:0301234567">0301 234 567</a></p>
+            <p><b>✉ Email:</b> <a href="mailto:ngocvancac@gmail.com" id="cfgEmailLink"><span id="cfgEmail">ngocvancac@gmail.com</span></a></p>
+            <p><b>Facebook:</b> Ngọc Vân Các</p>
+            <p><b>Zalo:</b> 0301 234 567</p>
+            <h3>Giờ mở cửa</h3>
+            <p>Thứ Hai – Thứ Sáu: 08:00 – 21:00<br>Thứ Bảy – Chủ Nhật: 09:00 – 21:00</p>
+            <p style="color:var(--muted)">Ghé cửa hàng để xem và thử vòng trực tiếp, hoặc nhắn cho chúng tôi — đội ngũ tư vấn sẽ gợi ý mẫu vòng hợp bản mệnh và size tay của bạn.</p>
+          </div>
+          <div>
+            <form class="form summary" id="contactForm" novalidate>
+              <div><label for="cName">Họ và tên *</label><input id="cName" placeholder="VD: Nguyễn Ngọc Anh">
+                <div class="err" id="eName">Vui lòng nhập họ và tên.</div>
+              </div>
+              <div><label for="cPhone">Số điện thoại *</label><input id="cPhone" inputmode="tel" placeholder="VD: 0901 234 567">
+                <div class="err" id="ePhone">Số điện thoại chưa hợp lệ (9–11 số).</div>
+              </div>
+              <div><label for="cEmail">Email *</label><input id="cEmail" type="email" placeholder="VD: ban@example.com">
+                <div class="err" id="eEmail">Email chưa đúng định dạng.</div>
+              </div>
+              <div><label for="cMsg">Nội dung cần tư vấn *</label><textarea id="cMsg" rows="4" placeholder="Bạn muốn tư vấn chọn vòng theo mệnh, size tay hay quà tặng…?"></textarea>
+                <div class="err" id="eMsg">Vui lòng nhập nội dung cần tư vấn.</div>
+              </div>
+              <button class="btn btn-jade" type="submit">GỬI LIÊN HỆ</button>
+              <div class="success" id="contactOk" style="display:none">✓ Đã gửi liên hệ thành công!<br>Ngọc Vân Các sẽ phản hồi bạn trong giờ làm việc. Cảm ơn bạn đã ghé Các.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="view" id="view-cart">
+      <div class="wrap" style="padding-top:30px">
+        <div class="eyebrow">Giỏ hàng</div>
+        <h2 style="font-size:32px;color:var(--jade2);margin:6px 0 18px">Giỏ hàng của bạn</h2>
+        <div id="cartEmpty" class="empty" style="display:none">
+          <h3 class="serif" style="color:var(--jade2)">Giỏ hàng đang trống</h3>
+          <p>Chưa có chiếc vòng nào được chọn. Quay lại cửa hàng xem một vòng nhé.</p><button class="btn btn-jade btn-sm" data-nav="shop">Đến cửa hàng</button>
+        </div>
+        <div class="two-col" id="cartWrap" style="grid-template-columns:1.25fr .75fr;align-items:start">
+          <div id="cartItems"></div>
+          <div class="summary">
+            <h3 class="serif" style="margin:0 0 10px;color:var(--jade2)">Tóm tắt đơn hàng</h3>
+            <div><label style="font-weight:600;font-size:13.5px">Khu vực giao hàng</label>
+              <select id="shipZone" style="margin-top:6px">
+                <option value="hanoi">Nội thành Hà Nội (≤10km) — giao 1–3 ngày</option>
+                <option value="province">Tỉnh / thành khác — giao 5–7 ngày</option>
+              </select>
+            </div>
+            <div class="line"><span>Tạm tính</span><b id="sumSub">0₫</b></div>
+            <div class="line"><span>Phí vận chuyển</span><b id="sumShip">Miễn phí</b></div>
+            <div class="line total"><span>Tổng cộng</span><span id="sumTotal">0₫</span></div>
+            <p style="font-size:12.5px;color:var(--muted)" id="shipNote">Nội thành Hà Nội: miễn phí trong bán kính 10km. Thời gian giao có thể thay đổi theo địa chỉ; đơn có giấy kiểm định cộng thêm 20 ngày.</p>
+            <button class="btn btn-jade" id="toCheckout" style="width:100%">Tiến hành thanh toán</button>
+            <button class="btn btn-ghost" data-nav="shop" style="width:100%;margin-top:10px">Tiếp tục mua sắm</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="view" id="view-orders">
+      <div class="wrap" style="padding-top:30px">
+        <h2 style="font-size:32px;color:var(--jade2);margin:6px 0 6px">Đơn hàng của tôi</h2>
+        <p style="color:var(--muted);margin:0 0 18px">Đặt hàng xong là xem được hành trình như TikTok Shop: đã đặt → đã xác nhận → đang chuẩn bị → đang giao → đã giao. Đơn hàng chỉ lưu trên trình duyệt này.</p>
+        <div class="track-search">
+          <input id="trackCode" placeholder="Nhập mã đơn hàng, VD: NVC-ABC123" aria-label="Mã đơn hàng">
+          <button class="btn btn-jade" id="trackGo" type="button">Tra cứu</button>
+        </div>
+        <p id="ordersCount" style="color:var(--muted);font-size:14px"></p>
+        <div id="ordersList"></div>
+        <div id="ordersEmpty" class="empty" style="display:none">
+          <h3 class="serif" style="color:var(--jade2)">Bạn chưa có đơn hàng nào</h3>
+          <p>Đặt một chiếc vòng rồi quay lại đây xem hành trình giao hàng nhé.</p><button class="btn btn-jade" data-nav="shop">Mua sắm ngay</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="modal" id="checkoutModal">
+    <div class="box">
+      <h3 class="serif" style="margin:0 0 4px;color:var(--jade2);font-size:24px">Thanh toán</h3>
+      <p style="color:var(--muted);margin:0 0 16px;font-size:14px">Điền thông tin nhận hàng để hoàn tất đơn (thanh toán mô phỏng cho bản demo).</p>
+      <form class="form" id="checkoutForm" novalidate>
+        <div><label for="oName">Họ tên người nhận *</label><input id="oName" placeholder="VD: Nguyễn Ngọc Anh">
+          <div class="err" id="oeName">Vui lòng nhập họ tên.</div>
+        </div>
+        <div><label for="oPhone">Số điện thoại *</label><input id="oPhone" inputmode="tel" placeholder="VD: 0901 234 567">
+          <div class="err" id="oePhone">Số điện thoại chưa hợp lệ (9–11 số).</div>
+        </div>
+        <div><label for="oAddr">Địa chỉ nhận hàng *</label><input id="oAddr" placeholder="Số nhà, đường, quận/huyện, tỉnh/thành">
+          <div class="err" id="oeAddr">Vui lòng nhập địa chỉ nhận hàng.</div>
+        </div>
+        <div><label for="oPay">Phương thức thanh toán</label><select id="oPay">
+            <option value="COD">Thanh toán khi nhận hàng (COD)</option>
+            <option value="Chuyển khoản">Chuyển khoản ngân hàng</option>
+          </select></div>
+        <div class="line" style="display:flex;justify-content:space-between;font-weight:700;color:var(--jade2)"><span>Tổng thanh toán</span><span id="oTotal"></span></div>
+        <div style="display:flex;gap:10px"><button type="button" class="btn btn-ghost" id="cancelCheckout" style="flex:1">Hủy</button><button type="submit" class="btn btn-jade" style="flex:1">Xác nhận đặt hàng</button></div>
+      </form>
+      <div class="success" id="orderOk" style="display:none;margin-top:16px">🎉 Đặt hàng thành công!<div class="code" id="orderCode"></div>
+        <p style="margin:6px 0 0;font-size:14px" id="orderNote"></p><button class="btn btn-jade btn-sm" id="okContinue" style="margin-top:12px">Tiếp tục mua sắm</button><button class="btn btn-gold btn-sm" id="okTrack" style="margin-top:12px;margin-left:8px">📦 Theo dõi đơn hàng</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Ngọc Vân Các</h4>
+          <p>Trang sức phong thủy — Ngọc dưỡng tâm an, Vân khai vận sáng.</p>
+          <p id="cfgDiaChi">366 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+        </div>
+        <div>
+          <h4>Liên hệ</h4><a href="tel:0301234567" id="cfgHotlineLink">Hotline: <span id="cfgHotline">0301 234 567</span></a><a href="mailto:ngocvancac@gmail.com">ngocvancac@gmail.com</a>
+          <p>Zalo: <span id="cfgZalo">0301 234 567</span></p>
+          <p>Facebook: Ngọc Vân Các</p>
+        </div>
+        <div>
+          <h4>Giờ mở cửa</h4>
+          <p>Thứ Hai – Thứ Sáu: 08:00 – 21:00</p>
+          <p>Thứ Bảy – Chủ Nhật: 09:00 – 21:00</p>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4><a href="#" data-nav="shop">Tất cả sản phẩm</a><a href="#" data-nav="about">Giới thiệu &amp; chính sách</a><a href="#" data-nav="blog">Bài viết tư vấn</a><a href="#" data-nav="contact">Gửi liên hệ</a>
+        </div>
+      </div>
+      <div class="copy">© 2026 Ngọc Vân Các — Trang Sức Phong Thủy. Bảo hành dây đeo vĩnh viễn.</div>
+    </div>
+  </footer>
+
+
+
+
+  <a class="zalo-fab" id="zaloFab" href="https://zalo.me/0337320206" target="_blank" rel="noopener" aria-label="Nhắn tin tư vấn qua Zalo 0337320206">
+    <span class="zalo-pill">Tư vấn qua Zalo</span>
+    <span class="zalo-btn">Zalo</span>
+  </a>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
